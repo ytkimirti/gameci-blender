@@ -1,11 +1,12 @@
-ARG GAME_CI_UNITY_EDITOR_IMAGE
+# ARG GAME_CI_UNITY_EDITOR_IMAGE
 
 #FROM ubuntu:18.04 AS blenderbuild
 
 #FROM nytimes/blender:latest
 
 # inject ruby and additional dependencies in game-ci's unity editor image
-FROM $GAME_CI_UNITY_EDITOR_IMAGE
+# FROM $GAME_CI_UNITY_EDITOR_IMAGE
+FROM unityci/editor:ubuntu-2020.3.28f1-webgl-1.0.1
 
 RUN apt-get update \
 &&  apt-get upgrade -y --force-yes \
