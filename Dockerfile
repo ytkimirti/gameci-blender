@@ -15,6 +15,9 @@ RUN apt-get update \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
+RUN which blender
+RUN which unity
+
 #RUN apt-get update && \
     #apt-get install -y \
         #git \
