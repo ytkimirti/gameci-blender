@@ -18,7 +18,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: GAME_CI_UNITY_EDITOR_IMAGE=unityci/editor:ubuntu-2020.3.28f1-webgl-1.0.1
+  IMAGE_NAME: ${{ github.repository }}
 #   IMAGE_NAME: GAME_CI_UNITY_EDITOR_IMAGE=unityci/editor:ubuntu-${UNITY_VERSION}-${component}-${GAME_CI_VERSION}
 
 jobs:
